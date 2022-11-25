@@ -19,6 +19,7 @@ user_avatars_router = APIRouter()
 user_avatar_list = []
 
 
+
 @user_avatars_router.get("/api/avatars/{user_id}")
 async def retrieve_user_avatars(user_id: int) -> dict:
     # 👇 DB query for the specific user generated avatars will be done here
